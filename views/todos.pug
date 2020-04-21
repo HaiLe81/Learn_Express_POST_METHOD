@@ -1,0 +1,9 @@
+h2 List todo
+
+form(action="/todos/search", method="GET")
+  input(type="text", name="q", value= value ? value : '')
+  button Search
+
+ul 
+  each todo in todos
+    li= todo.title
